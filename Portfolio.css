@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar section perform operation */
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  size: 25px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 20px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #f39c12;
+}
+
+/* button we will use repeatedely means that one by one and more times*/
+
+.btn {
+  background: #2575fc;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #f39c12;
+  color: #fff;
+}
+
+/* raj class section to perform operation on h2 img paragraph and so on */
+
+.raj {
+  height: 90vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.raj h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.raj p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* perform all operation on image means i add image so i perform many opeartion like image add change and colour and etc */
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0 auto 20px auto;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c, #42a5f5, #7e57c2);
+  background-size: 300% 300%;
+  animation: borderGradient 6s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+}
+
+@keyframes borderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* there are four section but i merge in a one section because this is east to understant and learn */
+
+.about,
+.skills,
+.projects,
+.contact {
+  padding: 100px 20px;
+  min-height: 80vh;
+  background: #fff;
+  padding-top: 120px;
+}
+
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #222;
+  padding-top: 80px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  font-style: italic;
+  color: black;
+  text-align: center;
+}
+.about {
+  padding: 100px 20px;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #fdf6e3, #fceabb);
+}
+
+/*  i add my skill section so i perform all things in skill section */
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  color: chartreuse;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.skill {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.skills {
+  padding: 100px 20px;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #e8f4fd, #c3e0f9);
+}
+
+.skill i {
+  font-size: 30px;
+  color: #2575fc;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.skill:hover {
+  background: #2575fc;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* this is my project section so i perform my project grid and template coloum */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #666;
+}
+.projects {
+  padding: 100px 20px;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #f3e8ff, #e3d4ff);
+}
+
+/* this is my contact section  */
+.contact p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contact {
+  padding: 100px 20px;
+  min-height: 80vh;
+  background: white;
+}
+
+.contact a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* this is footer part i use to take safe @copyright */
+
+footer {
+  background: #0f172a;
+  color: blue;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
